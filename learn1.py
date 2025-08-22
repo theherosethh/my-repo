@@ -1,1 +1,0 @@
-print("hello world \nmy name is keo")
