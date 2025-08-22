@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Module_2-Practice": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}

@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Module_2_Practice</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Module_2_Practice.Errors.T04_Errors</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Topics\T01_DataTypes_And_Literals.cs" />
+    <Compile Remove="Topics\T02_Variables_Scope.cs" />
+    <Compile Remove="Topics\T03_Anonymous_Types.cs" />
+    <Compile Remove="Topics\T04_Console_IO.cs" />
+    <Compile Remove="Topics\T05_Struct_Enum.cs" />
+    <Compile Remove="Topics\T06_Type_Conversion.cs" />
+    <Compile Remove="Topics\T07_Operators.cs" />
+    <Compile Remove="Topics\T08_Conditions.cs" />
+    <Compile Remove="Topics\T09_Loops.cs" />
+    <Compile Remove="Topics\T10_NameOf.cs" />
+    <Compile Remove="Topics\T11_Arrays.cs" />
+    <Compile Remove="Topics\T12_Strings.cs" />
+    <Compile Remove="Topics\T13_CommandLineArgs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net9.0\Module_2-Practice.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net9.0\Module_2-Practice.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net9.0\Module_2-Practice.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Module_2-Practice.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net9.0\" />
+    <Folder Include="obj\Debug\net9.0\refint\" />
+    <Folder Include="obj\Debug\net9.0\ref\" />
+    <Folder Include="Topics\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net9.0\Module_2-Practice.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net9.0\Module_2-Practice.assets.cache" />
+    <None Include="obj\Debug\net9.0\Module_2-Practice.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net9.0\Module_2-Practice.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Module_2-Practice.csproj.nuget.g.props" />
+    <None Include="obj\Module_2-Practice.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+</Project>
