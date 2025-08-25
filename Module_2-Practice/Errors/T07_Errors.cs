@@ -11,14 +11,21 @@ namespace Module_2_Practice.Errors
 		static void Main(string[] args)
 		{
 			int a = 10, b = 0;
-
-			Console.WriteLine("Division: " + (a / b)); // ❌ ERROR: divide by zero
+			if (a != 0)
+			{
+				Console.WriteLine("Division:" + (a / b));
+			}
+			else
+			{
+				Console.Write("Cannot Divided by zero!");        
+			}
+			//Console.WriteLine("Division: " + (a / b)); // ❌ ERROR: divide by zero
 
 			bool x = true, y = false;
-			Console.WriteLine("x & y: " + (x & 2)); // ❌ ERROR: invalid operands
+			Console.WriteLine("x & y: " + (x & y)); // ❌ ERROR: invalid operands
 
 			string? str = null;
-			Console.WriteLine("Length: " + str.Length); // ❌ ERROR: null reference
+			Console.WriteLine("Length: " + str?.Length); // ❌ ERROR: null reference
 		}
 	}
 }
