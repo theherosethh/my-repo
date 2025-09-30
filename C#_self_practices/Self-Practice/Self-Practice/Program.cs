@@ -41,10 +41,12 @@ namespace Self_Practice
         }   
         public static void For_Loops()
         {
-            //Used to execute a code for FINITE amount of time.
-            for (int i = 1; i <= 10; i++)  
-            {
-                Console.WriteLine($"{i}.I love you"); 
+           // Used to execute a code for FINITE amount of time.
+            for (int i = 1; i <= 10; i++)
+                {
+                Console.WriteLine($"{i}.I love you");
+
+
             }
             Console.WriteLine("Happy New Year!");
 
@@ -56,13 +58,45 @@ namespace Self_Practice
                 {
                     Console.Write(" ");
                 }
+                
                 for (int k = 1; k <= i; k++)
                 {
                     Console.Write("* ");
                 }
                 
-                Console.WriteLine();    
-            }  
+                Console.WriteLine();
+            }
+            //Reveres the Pattern
+            int rows1 = 7;
+            for (int i = rows1; i >= 1; i--)
+            {
+                for (int j = rows1; j > i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("* ");
+                }
+
+                Console.WriteLine();
+            }
         }
-    }
+        public static void Do_While_Loops()
+        {
+            int i = 0;
+            do
+            {
+                Console.WriteLine($"value of i is {i}");
+                      i++;
+            } while (i < 5); 
+
+
+        }
+        public static void While_Loops()
+        {
+
+
+        }
+    }   
 }
