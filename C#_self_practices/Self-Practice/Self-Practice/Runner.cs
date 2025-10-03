@@ -10,7 +10,7 @@ namespace Self_Practice
     {
         static void Main(string[] args)
         {
-            Program.For_Loops();
+            Program.Continue_statement();
 
         }
     }
