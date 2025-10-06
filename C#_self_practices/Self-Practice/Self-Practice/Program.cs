@@ -5,6 +5,7 @@ using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -361,6 +362,41 @@ namespace Self_Practice
                     continue;//  skip number 4 and console.writline, then goes back to the i++. Start from 5 and check condition again.
                 }
                 Console.WriteLine(i);
+            }
+        }
+        public static void Array()
+        {
+            //1. Length. Meaning: The total number of elements in the array. Works for: Any array — 1D, 2D, or more.
+            int[,] ints = { { 1, 2, 3 }, { 4, 5, 6 } };
+            Console.WriteLine(ints.Length);
+            int[] x = { 1, 4, 5, 23, 6 };
+            Console.WriteLine(x.Length);
+            //2. Meaning: The number of dimensions (or "axes") of the array.
+            int[,] ints1 = { { 1, 2, 3 }, { 4, 5, 6 } };
+            Console.WriteLine(ints1.Rank);//output 2 indicate that's two dimesions
+            int[] x1 = { 1, 4, 5, 23, 6 };
+            Console.WriteLine(x1.Rank);//output 2 indicate that's two dimesions
+            //3. Accessing element in array.
+            int[,] ints2 = { { 1, 2, 3 }, { 4, 5, 6 } };
+            Console.WriteLine(ints[1, 0]);//row 1, index 0, output is 4.
+
+        }
+        public static void Multi_Dimensional_array()
+        {
+            //It's an array inside one or multiple array.
+            string[] ford = { "Mustang", "F-150", "Explorer" };
+            string[] chevy = { "Corvette", "Camaro", "Silver" };
+            string[] Toyota = { "Corrola", "Camry", "Rav4" };
+
+            string[,] cars_brand = { { "Mustang", "F-150", "Explorer" },
+                                     { "Corvette", "Camaro", "Silver" }, 
+                                     { "Corrola", "Camry", "Rav4" } 
+                                   };
+            cars_brand[0, 0] = "Fision";
+            cars_brand[2, 1] = "Tocama";
+            foreach (string car in cars_brand)
+            {
+                Console.WriteLine(car);
             }
         }
     }   
