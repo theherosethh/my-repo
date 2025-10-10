@@ -14,26 +14,27 @@ class Exercise2
 
         // TODO: Write your code here
 
-        int[,] ints = new int[4, 3];
-        Console.Write("Enter Rows and Elements");
+        int[,] ints = new int [4, 3];
+        Console.Write("Enter number of 4 rows and 3 elements each: ");
         for (int i = 0; i < 4; i++)
         {
-            Console.WriteLine($"\nRow: {i + 1}: ");
+            Console.Write($"\nRow {i + 1}");
             for (int j = 0; j < 3; j++)
             {
-                Console.Write($"Element: {j + 1}: ");
-                ints[i, j] = int.Parse( Console.ReadLine() );       
-            }
+                Console.Write($"\nEnter element {j + 1}: ");
+                ints[i, j] = int.Parse(Console.ReadLine());
+            }    
         }
-        Console.WriteLine("Sum of Row and Element");
+        Console.WriteLine("Sum of element for each row");
         for (int i = 0; i < 4; i++)
         {
             int total = 0;
             for (int j = 0; j < 3; j++)
             {
-                total += ints[i, j];    
+                total += ints[i, j];
             }
-            Console.WriteLine($"Sum of Row {i + 1} is {total}");
+            Console.WriteLine($"Row {i + 1} sum of its elements {total}");
         }
-	}
+
+    }
 }

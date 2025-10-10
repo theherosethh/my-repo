@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,24 +27,42 @@ namespace M2_Array_App_Exercise
 			{ 60, 75, 85 },
 			{ 95, 88, 92 }
 		};
-
-			Console.WriteLine("Average Marks of Students:");
+			Console.WriteLine("Calculate average marks of students\n");
 			for (int i = 0; i < students.Length; i++)
 			{
-				int total = 0;
-				for (int j = 0; j < marks.GetLength(1); j++)
+                int total = 0;
+                for (int j = 0; j < marks.GetLength(1); j++)
 				{
 					total += marks[i, j];
 				}
 				double average = (double)total / marks.GetLength(1);
-				Console.WriteLine($"{students[i]}: {average:F2}");
+				Console.WriteLine($"Mark of student {i + 1} is {average:F1}"); //F2 mean only take two numbers behind . 
 			}
 
-			Console.WriteLine("\nStudent list using foreach:");
+			Console.WriteLine("\nList of student name");
 			foreach (string student in students)
 			{
 				Console.WriteLine(student);
 			}
+
+			//Console.WriteLine("Average Marks of Students:");
+			//for (int i = 0; i < students.Length; i++)
+			//{
+			//	int total = 0;
+			//	for (int j = 0; j < marks.GetLength(1); j++)
+			//	{
+			//		total += marks[i, j];
+			//	}
+			//	double average = (double)total / marks.GetLength(1);
+			//	Console.WriteLine($"{students[i]}: {average:F2}");
+			//}
+
+			//Console.WriteLine("\nStudent list using foreach:");
+			//foreach (string student in students)
+			//{
+			//	Console.WriteLine(student);
+			//}
+
 		}
 	}
 

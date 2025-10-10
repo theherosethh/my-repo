@@ -10,7 +10,7 @@ namespace Self_Practice
     {
         static void Main(string[] args)
         {
-            Program.Array();
+            Array_Exercises.Array_Ex3();
 
         }
     }
