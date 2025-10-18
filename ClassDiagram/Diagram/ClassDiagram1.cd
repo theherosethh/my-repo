@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Diagram.Users">
+    <Position X="0.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEQAAAAAAAAAAAAACAAAQIAAAAAQ=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diagram.Roles">
+    <Position X="5.5" Y="1.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAEIAAAAAAAABAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Roles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
