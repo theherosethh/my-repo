@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="M3_Class_Diagram_Practice.Users">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEQAAAAAAAAAAAAACAAAQIAAAAAQ=</HashCode>
+      <FileName>Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M3_Class_Diagram_Practice.Roles">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <AssociationLine Name="UsersRoles" Type="M3_Class_Diagram_Practice.Users">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="1.742" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAACAAAAAEIAAAAAAAABAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Roles.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UsersRoles" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="M3_Class_Diagram_Practice.Program">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAABAAAQAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
